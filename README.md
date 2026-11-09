@@ -51,8 +51,8 @@ The service uses `network_mode: host` so the container can see the host's LAN
 address. Host networking is supported on Linux; on Docker Desktop for macOS or
 Windows the container will not see the host's LAN IP correctly.
 
-The repository is bind-mounted into the container, so the log is written to
-`main/lan_ip.log` on the host.
+The `main/` directory is bind-mounted into the container, so the log is
+written to `main/lan_ip.log` on the host.
 
 ## Run locally
 
