@@ -1,0 +1,10 @@
+services:
+  lan-ip-logger:
+    container_name: lan-updater
+    build: .
+    network_mode: host
+    restart: always
+    env_file: .env
+    volumes:
+      - ./logs:/app
+      - ./main:/home/user/scripts
